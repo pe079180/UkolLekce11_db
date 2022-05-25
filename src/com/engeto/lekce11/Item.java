@@ -11,6 +11,29 @@ public class Item {
     private Integer numberInStock;
     private BigDecimal price;
 
+    public Item(Integer id, String partNo, String serialNo, String name, String description, Integer numberInStock, BigDecimal price) {
+        this.id = id;
+        this.partNo = partNo;
+        this.serialNo = serialNo;
+        this.name = name;
+        this.description = description;
+        this.numberInStock = numberInStock;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", partNo='" + partNo + '\'' +
+                ", serialNo='" + serialNo + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", numberInStock=" + numberInStock +
+                ", price=" + price +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }
