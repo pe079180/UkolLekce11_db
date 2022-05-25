@@ -1,0 +1,17 @@
+start ...
+goods.loadItemById(2)
+Item{id=2, partNo='PN11003', serialNo='SN3252600', name='Iphone', description='mobil', numberInStock=5, price=5814.00}
+
+goods.deleteAllOutOfStockItems
+1 out of stocks items deleted ...
+goods.loadAllAvailableItems
+[Item{id=1, partNo='PN11002', serialNo='SN3252625', name='Rolex', description='hodinky', numberInStock=2, price=50000.00}, Item{id=2, partNo='PN11003', serialNo='SN3252600', name='Iphone', description='mobil', numberInStock=5, price=5814.00}, Item{id=4, partNo='PN10010', serialNo='SN102201', name='PRIM', description='hodinky PRIM', numberInStock=10, price=12001.00}]
+
+goods.saveItem
+1 row inserted ...
+
+update price=5053 for id=2
+1 row updated ...
+Item{id=2, partNo='PN11003', serialNo='SN3252600', name='Iphone', description='mobil', numberInStock=5, price=5053.00}
+
+Process finished with exit code 0

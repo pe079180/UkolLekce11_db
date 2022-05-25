@@ -31,7 +31,7 @@ public class Item {
                 ", description='" + description + '\'' +
                 ", numberInStock=" + numberInStock +
                 ", price=" + price +
-                '}';
+                '}' + '\n';
     }
 
     public Integer getId() {
